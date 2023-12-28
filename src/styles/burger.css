@@ -1,0 +1,43 @@
+.burger {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+  width: 30px;
+  height: 30px;
+  padding: 5px 2px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.burger__btn {
+  width: 26px;
+  height: 2px;
+  background-color: var(--big-title-color);
+}
+
+
+.burger--active .burger__btn:first-child {
+  transform: rotate(45deg);
+  position: absolute;
+  top: 15px;
+}
+
+.burger--active .burger__btn:last-child {
+  transform: rotate(135deg);
+  position: absolute;
+  top: 15px;
+}
+
+.burger--active .burger__btn:nth-child(2) {
+  display: none;
+}
+
+.burger:hover {
+  cursor: pointer;
+}
+
+.burger:hover .burger__btn {
+  background-color: #fff;
+  transition: 0.3s;
+}

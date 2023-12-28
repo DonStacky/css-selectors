@@ -1,0 +1,157 @@
+@import './editor.css';
+@import './vinyl.css';
+@import './modal.css';
+@import './tape.css';
+
+.main {
+  height: 90%;
+  text-align: center;
+}
+
+.game-board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 20px 10px 10px;
+  transform: translate(0%);
+  transition: 5s;
+}
+
+.game-board__hide {
+  transform: translate(-500%);
+  transition: 3s;
+}
+
+.game-board__headline {
+  padding: 10px 15px;
+  border-radius: 50px;
+  background-color: var(--main-color);
+  color: var(--big-title-color);
+  margin-bottom: 0;
+}
+
+.game-board__table {
+  display: flex;
+  width: 500px;
+  height: 170px;
+  position: relative;
+  background: url('../assets/img/game-board.jpg') 0% 0% / cover no-repeat;
+  border-bottom: 10px outset #25294D;
+  box-shadow: 0px 0px 10px 2px #25294D;
+}
+
+.game-board__player {
+  display: flex;
+  gap: 5px;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  padding-right: 10px;
+  padding-left: 5px;
+}
+
+.game-board__volume {
+  height: 7px;
+  position: absolute;
+  transform: rotate(-90deg);
+  right: -8%;
+  top: 50%;
+  background: #0f1327;
+  border-radius: 5px;
+  appearance: none;
+  opacity: 0.7;
+}
+
+.game-board__volume::-webkit-slider-thumb {
+  appearance: none;
+  width: 30px;
+  height: 20px;
+  background: linear-gradient(to left, rgb(40, 40, 40) 30%, rgb(197, 196, 196) 100%);
+  border: 3px outset rgb(102, 102, 103);
+  border-radius: 2px;
+}
+
+.game-board__volume:hover {
+  opacity: 1;
+}
+
+.wrong-selector {
+  animation: wrongAnimation 1s linear 1;
+}
+
+.enhance {
+  transition: 0.3s;
+  transform: scale(1.1);
+}
+
+.empty.enhance {
+  transform: scale(1);
+}
+
+.tooltip, .tooltiptape {
+  position: absolute;
+  color: #557fb8;
+  white-space: nowrap;
+  padding: 5px;
+  top: -20%;
+  left: 50%;
+  transform: translate(-50%);
+  background-color: #d0d9e3;
+  box-shadow: 1px 1px 1px 1px #9596a6;
+  display: none;
+  z-index: 5;
+}
+
+.visible .tooltip {
+  display: block;
+}
+
+.visible-tape .tooltiptape {
+  display: block;
+}
+
+.tooltiptape {
+  top: -65px;
+}
+
+.skynyrd .tooltip, .brother .tooltip {
+  top: -50px;
+}
+
+.pale>span>span {
+  color: #d7d8dc !important;
+}
+
+.game-board__table--finish {
+  height: 590px;
+}
+
+.game-board__table--finish>.game-board__player {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  align-items: center;
+  justify-items: center;
+}
+
+.game-board__player--change {
+  animation: changeLevel 2s linear 1;
+}
+
+.game-board__table--change {
+  overflow: hidden;
+}
+
+.game-board__help {
+  padding: 5px 15px;
+  background-color: rgb(70, 104, 151);
+  border-radius: 15px;
+  margin: 1.5rem auto;
+  color: var(--big-title-color);
+  cursor: pointer;
+}
+
+.game-board__help:hover {
+  background-color: var(--main-color);
+}

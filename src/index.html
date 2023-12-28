@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RS-CSS</title>
+</head>
+<body>
+  <div class="overlay"></div>
+  <div class="wrapper">
+    <div class="modal">
+      <h2 class="modal__title">Level complete!</h2>
+      <button class="modal__btn">OK</button>
+    </div>
+    <header class="header">
+      <div>
+      <img src="./assets/img/pngwing.com.png" alt="vinyl">
+        Vinylla CSS
+      </div>
+      <div class="header__burger burger">
+        <div class="burger__btn"></div><div class="burger__btn"></div><div class="burger__btn"></div>
+      </div>
+    </header>
+    <main class="main">
+      <div class="game-board">
+        <h1 class="game-board__headline" id="task"></h1>
+        <div class="game-board__help">Help</div>
+        <div class="game-board__table">
+          <div class="game-board__player">
+          </div>
+          <input type='range' min='0' max='100' value='10' class="game-board__volume"></input>
+        </div>
+      </div>
+      <div class="editor">
+        <div class="css-editor">
+          <div class="editor__header">CSS Editor</div>
+          <div class="editor__main">
+            <div class="editor__ruler">
+              1 <br> 2 <br> 3 <br> 4 <br> 5 <br> 6 <br> 7 <br> 8 <br> 9 <br> 10 <br>
+              11 <br> 12 <br> 13 <br> 14 <br> 15 <br>16 <br> 17 <br> 18<br> 19 <br> 20 <br>
+            </div>
+            <div class="editor__input-field">
+              <div class="editor__line">
+                <div class="editor__view"></div>
+                <input type="text" class="editor__input" placeholder="Type in a CSS selector">
+                <button class="editor__btn">Enter</button>
+              </div>
+              <pre class="css-code">
+{
+/* Styles would go here. */
+}
+              </pre>
+            </div>
+          </div>
+        </div>
+        <div class="html-viewer">
+          <div class="editor__header">HTML Viewer</div>
+          <div class="editor__main">
+            <div class="editor__ruler HTMLViewer__ruler">
+              1 <br> 2 <br> 3 <br> 4 <br> 5 <br> 6 <br> 7 <br> 8 <br> 9 <br> 10 <br>
+              11 <br> 12 <br> 13 <br> 14 <br> 15 <br>16 <br> 17 <br> 18<br> 19 <br> 20 <br>
+            </div>
+            <div class="editor__input-field">
+              <pre class="html-code" id="gameLayer">
+<code >&lt;div class="table"&gt;
+  <div>&lt;vinyl&gt;</div>
+  <div>&lt;vinyl&gt;</div>
+&lt;/div&gt;
+</code>
+            </pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <a href="https://github.com/DonStacky">@donstacky</a><span>2023</span>
+      <a href="https://rs.school/js/" class="footer__rss"></a>
+    </footer>
+</div>
+<aside class="aside">
+  <div class="aside__menu">
+    <h2 class="aside__menu-title">Choose a level</h2>
+    <div class="aside__level-link"><div class="aside__check"></div><span>1</span>A</div>
+    <div class="aside__level-link"><div class="aside__check"></div><span>2</span>#id</div>
+    <div class="aside__level-link"><div class="aside__check"></div><span>3</span>.classname</div>
+    <div class="aside__level-link"><div class="aside__check"></div><span>4</span>A, B</div>
+    <div class="aside__level-link"><div class="aside__check"></div><span>5</span>A B</div>
+    <div class="aside__level-link"><div class="aside__check"></div><span>6</span>#id A</div>
+    <div class="aside__level-link"><div class="aside__check"></div><span>7</span>A.classname</div>
+    <div class="aside__level-link"><div class="aside__check"></div><span>8</span>*</div>
+    <div class="aside__level-link"><div class="aside__check"></div><span>9</span>A *</div>
+    <div class="aside__level-link"><div class="aside__check"></div><span>10</span>:first-of-type</div>
+    <div class="aside__level-link"><div class="aside__check"></div><span>11</span>:empty</div>
+    <button class="aside__button">Reset Progress</button>
+  </div>
+  <div class="aside__level-header">
+    <div>
+      <h2 class="aside__levels" id="level"></h2>
+      <div class="aside__check"></div>
+    </div>
+    <div class="aside__burger burger">
+      <div class="burger__btn"></div><div class="burger__btn"></div><div class="burger__btn"></div>
+    </div>
+  </div>
+  <h3 class="aside__desc-title" id="name"></h3>
+  <p class="aside__desc-text" id="levelsDescription"></p>
+  <h3 class="aside__desc-title" id="selector"></h3>
+  <p class="aside__desc-text" id="selectorDescription"></p>
+  <h3 class="aside__desc-title">Examples</h3>
+  <p class="aside__desc-text" id="examples"></p>
+</aside>
+</body>
+</html>

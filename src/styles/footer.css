@@ -1,0 +1,29 @@
+.footer {
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.footer span,.footer a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 40px;
+  background-color: #3a5a7d;
+  border-radius: 50px;
+  border: 2px solid #000;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer__rss {
+  display: inline-block;
+  width: 120px;
+  height: 40px;
+  background: url('../assets/svg/rs_school_js.svg') 50% 50% / 60% no-repeat, #3a5a7d 0% 0% / cover;
+  border-radius: 50px;
+  border: 2px solid #000;
+}

@@ -1,0 +1,112 @@
+.vinyl__record {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  filter: drop-shadow(0px 0px 3px #9596a6);
+}
+
+.vinyl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  max-height: 140px;
+  max-width: 140px;
+  width: 100%;
+  height: 100%;
+  background-color: #222229;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.vinyl--active {
+  animation: keepSelection 2s linear infinite;
+}
+
+.vinyl::after {
+  content: '';
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 4px;
+  right: -17px;
+  filter: drop-shadow(1px 1px 3px #9596a6);
+  transform: rotate(-35deg);
+  background: url('../assets/img/tunearm.png') 0% 0% / contain no-repeat;
+}
+
+.floyd {
+  background: url('../assets/img/floyd.png') 50% 50% / contain no-repeat;
+}
+
+.jefferson {
+  background: url('../assets/img/jefferson.png') 50% 50% / contain no-repeat;
+}
+
+.rainbow {
+  background: url('../assets/img/rainbow.png') 50% 50% / contain no-repeat;
+}
+
+.zeppelin {
+  background: url('../assets/img/zeppelin.png') 50% 50% / 93% no-repeat;
+}
+
+.brother {
+  width: 90px;
+  height: 90px;
+  background: url('../assets/img/brother.png') 50% 50% / 100% no-repeat;
+}
+
+.brother2 {
+  background: url('../assets/img/brother2.png') 50% 50% / 100% no-repeat;
+}
+
+.journey {
+  background: url('../assets/img/journey.png') 50% 50% / contain no-repeat;
+}
+
+.skynyrd {
+  width: 90px;
+  height: 90px;
+  background: url('../assets/img/skynyrd.png') 50% 50% / 100% no-repeat;
+}
+
+.skynyrd2 {
+  background: url('../assets/img/skynyrd2.png') 50% 50% / 100% no-repeat;
+}
+
+.shocking {
+  background: url('../assets/img/shocking_blue.png') 50% 50% / contain no-repeat;
+}
+
+.mamas {
+  background: url('../assets/img/mamas.png') 50% 50% / contain no-repeat;
+}
+
+.stones {
+  background: url('../assets/img/stones.png') 50% 50% / contain no-repeat;
+}
+
+.sabbath {
+  background: url('../assets/img/sabbath.png') 50% 50% / contain no-repeat;
+}
+
+.empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  background-color: rgb(62, 62, 66);
+  filter: drop-shadow(0px 0px 1px #9596a6);
+}
+
+.vinyl__record--finish:hover {
+  cursor: pointer;
+  animation: keepTurning 3s linear infinite;
+  box-shadow: inset 0px 0px 0px 5px rgb(251, 251, 251, 0.4);
+}

@@ -1,0 +1,145 @@
+.editor {
+  display: flex;
+  margin: 10px;
+  border: 5px solid rgb(92, 125, 150);
+  min-width: 560px;
+}
+
+.editor__header {
+  font-size: 1.8rem;
+  padding: 10px 15px;
+  text-align: start;
+  background-color: var(--main-color);
+}
+
+.editor__main {
+  display: flex;
+}
+
+.editor__ruler {
+  width: 11%;
+  padding: 10px;
+  color: var(--main-color);
+  font-size: 1.6rem;
+  line-height: 150%;
+  vertical-align: middle;
+  text-align: end;
+  background-color: rgb(193, 209, 222);
+}
+.editor__input-field {
+  width: 90%;
+  background-color: rgb(234, 239, 243);
+}
+
+.html-code, .css-code {
+  padding: 0 10px;
+  color: #000;
+  font-size: 1.6rem;
+  line-height: 150%;
+  margin: 0;
+  text-align: start;
+}
+.html-code {
+  padding: 10px 10px 0px;
+  background-color: #202746;
+}
+.css-editor, .html-viewer  {
+  color: var(--text-color);
+  width: 50%;
+}
+
+.editor__line {
+  position: relative;
+  padding: 10px 10px 0;
+  text-align: start;
+}
+
+.editor__input {
+  position: relative;
+  line-height: 125%;
+  width: 75%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  margin-right: 10px;
+  color: transparent;
+  caret-color: #202746;
+}
+
+.editor__btn {
+  color: var(--main-color);
+  font-size: 1.6rem;
+  padding: 0 5px;
+  border: 1px solid var(--main-color);
+  border-radius: 3px;
+  box-shadow: 1px 1px 3px var(--main-color);
+  opacity: 0.7;
+}
+
+.editor__btn:hover {
+  opacity: 1;
+}
+
+.editor__btn:active {
+  box-shadow: 1px 1px 0px var(--main-color);
+}
+
+pre {
+  height: 100%;
+}
+
+div.editor__input-field > pre > code {
+  padding-top: 10px;
+  font-size: 1.6rem;
+  line-height: 150%;
+  vertical-align: top;
+  text-align: start;
+}
+
+.HTMLViewer__ruler {
+  color: #6f7aaa;
+  background-color: #3f4767;
+}
+
+code>span {
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+code>span:hover .hljs-name {
+  color: #d7d8dc;
+}
+
+.hljs-tag:first-child, .hljs-tag:last-child {
+  pointer-events: none;
+}
+
+pre code.hljs {
+  display: inline-block !important;
+  padding: 0 !important;
+}
+
+.editor__view {
+  width: 70%;
+  min-height: 2.2rem;
+  position: absolute;
+  padding: 2px 5px 2px 3px;
+  animation: keepInput 2s linear infinite;
+  overflow: auto;
+}
+
+.editor__view--class {
+  color:#a39239;
+}
+
+.editor__view--id {
+  color:#57a925;
+}
+
+.editor__view--tag {
+  color: #c93b3e;
+}
+
+.editor__view--attr {
+  color: #c76b29;
+}

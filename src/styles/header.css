@@ -1,0 +1,33 @@
+.header img {
+  width: 30px;
+  height: 30px;
+  opacity: 0.7;
+}
+
+.header img:hover {
+  opacity: 1;
+  animation: keepTurning 3s linear infinite;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Lato, sans-serif;
+  padding: 10px;
+  color: var(--big-title-color);
+}
+
+.header>div:first-child {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 10px;
+  border-radius: 50px;
+  background-color: var(--main-color);
+  width: 150px;
+}
+
+.header__burger {
+  display: none;
+}

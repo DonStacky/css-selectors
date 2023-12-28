@@ -1,0 +1,41 @@
+@keyframes keepTurning {
+  from {transform: rotate(0deg);}
+  to {transform: rotate(360deg);}
+}
+
+@keyframes keepSelection {
+  10% {box-shadow: inset 0px 0px 0px 0px #ffffff;}
+  50% {box-shadow: inset 0px 0px 4px 4px #ffffff;}
+  90% {box-shadow: inset 0px 0px 0px 0px #ffffff;}
+}
+
+@keyframes keepSelectionTape {
+  10% {box-shadow: 0px 0px 0px 0px #ffffff;}
+  50% {box-shadow: 0px 0px 4px 4px #ffffff;}
+  90% {box-shadow: 0px 0px 0px 0px #ffffff;}
+}
+
+@keyframes tapeActive {
+  10% {filter: drop-shadow(0px 0px 0px rgb(255, 255, 255));}
+  50% {filter: drop-shadow(0px 0px 10px rgb(255, 255, 255));}
+  90% {filter: drop-shadow(0px 0px 0px rgb(255, 255, 255));}
+}
+
+@keyframes wrongAnimation {
+  0% {transform: rotate(0deg)}
+  5% {transform: rotate(8deg)}
+  80% {transform: rotate(-3deg)}
+  100% {transform: rotate(0deg)}
+}
+
+@keyframes keepInput {
+  0% {background-color: rgb(234, 239, 243)}
+  50% {background-color: #b7c4d3}
+  100% {background-color: rgb(234, 239, 243)}
+}
+
+@keyframes changeLevel {
+  0% {transform: translate(0)}
+  50% {transform: translate(-120%)}
+  100% {transform: translate(0)}
+}
